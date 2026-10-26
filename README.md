@@ -151,6 +151,12 @@ Logs: **Settings → System → Logs**, filter by `adb_media_state`.
   if the built-in one starts disconnecting, increase its poll interval or let this integration
   be the only ADB consumer.
 
+## Project status
+
+Small-scope personal integration, maintained for private use and shared as-is: no support
+guarantee, no telemetry, no external services. Everything happens on your own network
+(ADB to the device, nothing else).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
