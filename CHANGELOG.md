@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Versioning: CalVer (`YYYY.MM.PATCH`), git tag equals `manifest.json` version with a `v` prefix.
 
+## v2026.10.2 — 2026-10-26
+
+- README: `AI-assisted` badge and a "How this was built" disclosure section
+  (what the AI wrote, what was human-reviewed, how it was verified).
+
 ## v2026.10.1 — 2026-10-26
 
 Validation fixes (HACS + hassfest):

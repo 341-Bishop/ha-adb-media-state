@@ -1,6 +1,7 @@
 # ADB Media State
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![AI-assisted](https://img.shields.io/badge/AI--assisted-yes-blueviolet)](#how-this-was-built)
 
 Home Assistant custom integration that reports **what an Android device is playing**, read
 straight from the system media session over ADB. Works with Android TV / Google TV boxes,
@@ -156,6 +157,25 @@ Logs: **Settings → System → Logs**, filter by `adb_media_state`.
 Small-scope personal integration, maintained for private use and shared as-is: no support
 guarantee, no telemetry, no external services. Everything happens on your own network
 (ADB to the device, nothing else).
+
+## How this was built
+
+Disclosure, because "AI" on the tin should mean something specific.
+
+- **Code:** written by an AI agent (Hermes / "Bishop") under a human maintainer, who set the
+  requirements, made the design decisions and accepted every change.
+- **Not "vibe coded":** the behaviour was measured on real hardware (`dumpsys media_session`
+  captures from an Android TV in five different playback situations) before any classification
+  rule was written, and those captures are kept as test fixtures.
+- **Verification:** unit tests on those real captures (modes with and without the experimental
+  programme heuristic), plus CI — `hassfest` and HACS validation — on every push and release.
+- **Bugs found and fixed during review:** a stale-state design flaw in the first MQTT prototype,
+  a foreground-app fallback that flipped the sensor when an app merely *opened*, and a Jinja2
+  scoping mistake in a template sensor.
+- **What it does not do:** no network calls besides ADB to your own device, no analytics,
+  no accounts, no cloud.
+
+If something is wrong, it is a bug, not a mystery: issues are welcome, support is not promised.
 
 ## License
 
