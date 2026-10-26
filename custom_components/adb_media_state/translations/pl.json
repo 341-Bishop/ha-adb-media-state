@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ADB Media State",
+        "description": "Połączenie z urządzeniem Android (TV, box, player) po ADB. Przy pierwszym połączeniu urządzenie poprosi o autoryzację klucza — wybierz „zawsze zezwalaj”.",
+        "data": {
+          "name": "Nazwa encji (użyta też jako entity id)",
+          "host": "Adres IP urządzenia",
+          "port": "Port ADB",
+          "package": "Pakiet aplikacji (puste = dowolna aplikacja)",
+          "scan_interval": "Odświeżanie (sekundy)",
+          "detect_program": "Wykrywaj programy TV w VOD (eksperymentalne)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie udało się połączyć lub odczytać sesji multimedialnej (sprawdź ADB na urządzeniu, autoryzację klucza, IP i port)."
+    },
+    "abort": {
+      "already_configured": "Ta para urządzenie + aplikacja jest już skonfigurowana.",
+      "import_failed": "Import z YAML nie powiódł się."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opcje ADB Media State",
+        "data": {
+          "scan_interval": "Odświeżanie (sekundy)",
+          "detect_program": "Wykrywaj programy TV w VOD (eksperymentalne)"
+        }
+      }
+    }
+  }
+}

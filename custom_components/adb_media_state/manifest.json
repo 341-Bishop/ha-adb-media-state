@@ -1,0 +1,11 @@
+{
+  "domain": "adb_media_state",
+  "name": "ADB Media State",
+  "codeowners": ["@341-Bishop"],
+  "config_flow": true,
+  "documentation": "https://github.com/341-Bishop/ha-adb-media-state",
+  "issue_tracker": "https://github.com/341-Bishop/ha-adb-media-state/issues",
+  "iot_class": "local_polling",
+  "requirements": ["adb-shell>=0.4.4"],
+  "version": "2026.10.0"
+}
