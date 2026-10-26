@@ -4,8 +4,8 @@
   "codeowners": ["@341-Bishop"],
   "config_flow": true,
   "documentation": "https://github.com/341-Bishop/ha-adb-media-state",
-  "issue_tracker": "https://github.com/341-Bishop/ha-adb-media-state/issues",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/341-Bishop/ha-adb-media-state/issues",
   "requirements": ["adb-shell>=0.4.4"],
-  "version": "2026.10.0"
+  "version": "2026.10.1"
 }

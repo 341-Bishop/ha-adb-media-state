@@ -3,6 +3,15 @@
 All notable changes to this project are documented here.
 Versioning: CalVer (`YYYY.MM.PATCH`), git tag equals `manifest.json` version with a `v` prefix.
 
+## v2026.10.1 — 2026-10-26
+
+Validation fixes (HACS + hassfest):
+
+- `manifest.json`: keys sorted as required (domain, name, then alphabetical).
+- Brand assets moved to `custom_components/adb_media_state/brand/icon.png`
+  (the location both validators expect).
+- Repository topics added (see GitHub "About").
+
 ## v2026.10.0 — 2026-10-26
 
 Initial public release.
